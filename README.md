@@ -17,4 +17,4 @@ You are more than welcome to contact me with any questions, suggestions or propo
 
 73 de 4Z7DTF
 
-![73's](https://raw.githubusercontent.com/4z7dtf/hf_loop_ant/master/Images/vx8_73.jpg)
+![73's](https://raw.githubusercontent.com/4z7dtf/ft817_cat_python/master/images/73s.jpg)
