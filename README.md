@@ -1,4 +1,4 @@
-# Yaesu FT-817ND CAT Display Inplemented In Python
+# Yaesu FT-817ND CAT Display Implemented In Python
 Python inplementation of CAT system for Yaesu FT-817ND.
 
 ## Overview
@@ -11,6 +11,12 @@ The program is written in Python and uses ```serial``` library to connect to the
 1. This program is provided as is and I'm not responsible for any damage it may cause.
 2. Before using this program make sure you completely understand what you are doing.
 3. Before sending any commands to your transceiver make a backup copy of factory calibration settings in service menu. There are [sources](http://www.ka7oei.com/ft817_meow.html) which state that some commands may completely erase it. This may result in need to send the transceiver to Yaesu for realignment.
+
+## Connecting to PC
+
+Yaesu FT-817ND's is connected to PC through a COM port. I used one of many USB to COM boards available on eBay and AliExpress for a couple of dollars. The port is connected to ```TXD``` and ```RXD``` pins of the ```ACC``` connector located on the rear panel of the transceiver. Refer to (Yaesu FT-817ND's Operation Manual)[http://www.yaesu.co.uk/files/FT-817ND_Operating%20Manual.pdf] for more details.
+
+![ACC plug](https://raw.githubusercontent.com/4z7dtf/ft817_cat_python/master/images/ft817_acc.png)
 
 ## Program Structure
 
