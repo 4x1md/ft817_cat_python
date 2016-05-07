@@ -2,9 +2,10 @@
 Created on 06 May 2016
 
 @author: Dmitry Melnichansky 4Z7DTF
+         https://github.com/4z7dtf
+         http://www.qrz.com/db/4Z7DTF
 '''
 
-#from serial import *
 import serial
 import time
 
@@ -15,7 +16,6 @@ CONN_STOPBITS = serial.STOPBITS_TWO
 MODES = ["LSB", "USB", "CW", "CWR", "AM", None, "WFM", None, "FM", None, "DIG", None, "PKT"]
 CMD_READ_FREQ = [0x00, 0x00, 0x00, 0x00, 0x03]
 CMD_READ_RX_STATUS = [0x00, 0x00, 0x00, 0x00, 0xE7]
-
 SAMPLES_PER_SEC = 1
 
 class FT817:
