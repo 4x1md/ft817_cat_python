@@ -54,7 +54,7 @@ The output consists of two lines which are pretty self explanatory.
 
 The first line shows frequency, mode (AM, FM, SSB, PKT etc.) and squelch state. The second line is S-Meter which shows S-level and dB over S9 and a simple scale where 15 dots correspond to S0 and 15 pipes correspond to S9+20dB.
 
-Program output in console with squelch off (left) and squelch on (right):
+Program output in console with no signal and squelch on (left) and with squelch off (right):
 
 ![Squelch on](https://raw.githubusercontent.com/4z7dtf/ft817_cat_python/master/images/ft817_cat_output.png)
 
