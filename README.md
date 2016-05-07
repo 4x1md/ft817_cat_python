@@ -1,4 +1,4 @@
-# Yaesu FT-817ND CAT system inplemented in Python
+# Yaesu FT-817ND CAT Display Inplemented In Python
 Python inplementation of CAT system for Yaesu FT-817ND.
 
 ## Overview
