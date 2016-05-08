@@ -6,7 +6,7 @@ According to Yaesu FT-817ND's manual, the CAT System allows the transceiver to b
 
 The program is written in Python and uses ```serial``` library to connect to the transceiver. It runs as console application in text mode.
 
-## Important Warning!
+## :warning: Important Warning!
 
 1. This program is provided as is and I'm not responsible for any damage it may cause.
 2. Before using this program make sure you completely understand what you are doing.
@@ -63,7 +63,7 @@ You are more than welcome to contact me with any questions, suggestions or propo
 
 1. Visit [my QRZ.COM page](https://www.qrz.com/db/4Z7DTF)
 2. Visit [my Facebook profile](https://www.facebook.com/Dima.Meln)
-3. Write me an email to iosaaris =at= gmail dot com
+3. :email: Write me an email to iosaaris =at= gmail dot com
 
 73 de 4Z7DTF
 
