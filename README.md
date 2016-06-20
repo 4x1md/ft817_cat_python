@@ -16,7 +16,7 @@ The program is written in Python and uses ```serial``` library to connect to the
 
 Yaesu FT-817ND's is connected to PC through a COM port. I used one of many USB to COM boards available on eBay and AliExpress for a couple of dollars. The port is connected to ```TXD``` and ```RXD``` pins of the ```ACC``` connector located on the rear panel of the transceiver. Refer to [Yaesu FT-817ND's Operation Manual](http://www.yaesu.co.uk/files/FT-817ND_Operating%20Manual.pdf) for more details.
 
-![ACC plug](https://raw.githubusercontent.com/4z7dtf/ft817_cat_python/master/images/ft817_connection.png)
+![ACC plug](https://raw.githubusercontent.com/4x5dm/ft817_cat_python/master/images/ft817_connection.png)
 
 ## Program Structure
 
@@ -56,15 +56,15 @@ The first line shows frequency, mode (AM, FM, SSB, PKT etc.) and squelch state. 
 
 Program output in console with no signal and squelch on (left) and with squelch off (right):
 
-![Squelch on](https://raw.githubusercontent.com/4z7dtf/ft817_cat_python/master/images/ft817_cat_output.png)
+![Squelch on](https://raw.githubusercontent.com/4x5dm/ft817_cat_python/master/images/ft817_cat_output.png)
 
 ## Questions? Suggestions?
 You are more than welcome to contact me with any questions, suggestions or propositions regarding this project. You can:
 
-1. Visit [my QRZ.COM page](https://www.qrz.com/db/4Z7DTF)
+1. Visit [my QRZ.COM page](https://www.qrz.com/db/4X5DM)
 2. Visit [my Facebook profile](https://www.facebook.com/Dima.Meln)
 3. :email: Write me an email to iosaaris =at= gmail dot com
 
-73 de 4Z7DTF
+73 de 4X5DM ex 4Z7DTF
 
-![73's](https://raw.githubusercontent.com/4z7dtf/ft817_cat_python/master/images/73s.jpg)
+![73's](https://raw.githubusercontent.com/4x5dm/ft817_cat_python/master/images/73s.jpg)
