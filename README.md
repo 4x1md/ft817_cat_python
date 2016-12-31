@@ -28,21 +28,31 @@ The program is implemented as ```FT817``` class with following methods:
 
 ```read_rx_status(self)```: reads receiver status (S-level, squelch state, CTCSS/DCS code match and discriminator centering) and stores S-level and squelch state in ```self._s_meter``` and ```self._squelch``` variables.
 
-```generate_s_meter_string(self, s_meter)```: generates S-meter string for second line of output.
+```get_s_meter_string(self, s_meter)```: generates S-meter string for second line of output.
 
-```print_data(self)```: prints all the data.
+```get_trx_state_string(self)```: generates two lines of text which include frequency, modulation, squelch level and S-meter data.
 
 ```loop(self, samples_per_sec)```: reads data from the transceiver as many times per second as defined in ```samples_per_sec``` variable.
 
-## Program Settings
+## Program Settings And Constants
 
-Program settings are defined by the following constants:
+### FT817() Class
 
-```CONN_PORT```, ```CONN_SPEED```, ```CONN_STOPBITS```: COM port name, speed and stopbits accordingly. By default the speed must be 4800 bps with two stop bits.
+```FT817``` class contains the following settings and constants:
+
+```SERIAL_SPEED```, ```SERIAL_STOPBITS```: COM port speed and stopbits accordingly. By default FT-817 CAT interface is set to 4800 bps with two stop bits.
 
 ```CMD_READ_FREQ```, ```CMD_READ_RX_STATUS```: byte sequences to send to the trasceiver to read frequency and RX status accordingly.
 
+### trx_monitor.py
+
+```SERIAL_PORT```: COM port name where FT-817ND transceiver is connected.
+
 ```SAMPLES_PER_SEC```: number of times per second to query the transceiver.
+
+## Running the program
+
+Run the ```trx_monitor.py``` file in Python interpreter.
 
 ## Program Output
 
