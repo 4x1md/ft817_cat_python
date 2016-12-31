@@ -18,11 +18,13 @@ Yaesu FT-817ND's is connected to PC through a COM port. I used one of many USB t
 
 ![ACC plug](https://raw.githubusercontent.com/4x5dm/ft817_cat_python/master/images/ft817_connection.png)
 
+Programming cable can also be used and will work fine with this program.
+
 ## Program Structure
 
 The program is implemented as ```FT817``` class with following methods:
 
-```__init__(self)```: constructor which starts serial connection and resets transceiver state variables ```self._freq```, ```self._mode```, ```self._squelch``` and ```self._s_meter```.
+```__init__(self, serial_port, serial_speed=SERIAL_SPEED, serial_stopbits)```: constructor which starts serial connection and resets transceiver state variables ```self._freq```, ```self._mode```, ```self._squelch``` and ```self._s_meter```.
 
 ```read_frequency(self)```: reads frequency and mode data and stores it in ```self._freq``` and ```self._mode``` variables.
 
