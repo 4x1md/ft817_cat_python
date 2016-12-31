@@ -20,13 +20,14 @@ class FT817(object):
     # Serial port settings
     SERIAL_SPEED = 4800
     SERIAL_STOPBITS = serial.STOPBITS_TWO
+    SERIAL_TIMEOUT = 1.0
     # Transceiver modes and commands
     MODES = ["LSB", "USB", "CW", "CWR", "AM", None, "WFM", None, "FM", None, "DIG", None, "PKT"]
     CMD_READ_FREQ = [0x00, 0x00, 0x00, 0x00, 0x03]
     CMD_READ_RX_STATUS = [0x00, 0x00, 0x00, 0x00, 0xE7]
     
     def __init__(self, serial_port, serial_speed=SERIAL_SPEED, serial_stopbits=SERIAL_STOPBITS):
-        self._serial = serial.Serial(serial_port, serial_speed, stopbits=serial_stopbits)
+        self._serial = serial.Serial(serial_port, serial_speed, stopbits=serial_stopbits, timeout=FT817.SERIAL_TIMEOUT)
         self._frequency = ""
         self._mode = ""
         self._squelch = True

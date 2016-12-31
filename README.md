@@ -24,7 +24,7 @@ Programming cable can also be used and will work fine with this program.
 
 The program is implemented as ```FT817``` class with following methods:
 
-```__init__(self, serial_port, serial_speed=SERIAL_SPEED, serial_stopbits)```: constructor which starts serial connection and resets transceiver state variables ```self._freq```, ```self._mode```, ```self._squelch``` and ```self._s_meter```.
+```__init__(self, serial_port, serial_speed, serial_stopbits)```: constructor which starts serial connection and resets transceiver state variables ```self._freq```, ```self._mode```, ```self._squelch``` and ```self._s_meter```.
 
 ```read_frequency(self)```: reads frequency and mode data and stores it in ```self._freq``` and ```self._mode``` variables.
 
@@ -43,6 +43,8 @@ The program is implemented as ```FT817``` class with following methods:
 ```FT817``` class contains the following settings and constants:
 
 ```SERIAL_SPEED```, ```SERIAL_STOPBITS```: COM port speed and stopbits accordingly. By default FT-817 CAT interface is set to 4800 bps with two stop bits.
+
+```SERIAL_TIMEOUT```: sets COM port reading timeout to avoid program blocking if the transceiver is not connected to the port or is turned off.
 
 ```CMD_READ_FREQ```, ```CMD_READ_RX_STATUS```: byte sequences to send to the trasceiver to read frequency and RX status accordingly.
 
