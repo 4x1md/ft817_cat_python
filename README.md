@@ -1,5 +1,5 @@
 # Yaesu FT-817ND CAT Display In Python
-Python inplementation of CAT system for Yaesu FT-817ND.
+Python implementation of CAT system for Yaesu FT-817ND.
 
 ## Overview
 According to Yaesu FT-817ND's manual, the CAT System allows the transceiver to be controlled by a personal computer. The purpose of this project is to learn this system for later implementing it using an AVR microcontroller.
